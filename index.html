@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUANTUMYIELD</title>
+    <meta
+      name="description"
+      content="QUANTUMYIELD Dashboard - Multi-chain yield engine and portfolio control center."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-one"></div>
+    <div class="bg-glow glow-two"></div>
+
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark">Q</div>
+        <div class="brand-text">
+          <span class="brand-name">QUANTUMYIELD</span>
+          <span class="brand-sub">Yield engine</span>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#overview" class="active">Overview</a>
+        <a href="#vaults">Vaults</a>
+        <a href="#strategies">Strategies</a>
+        <a href="#analytics">Analytics</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="ghost-btn">Docs</button>
+        <button class="primary-btn">Launch vault</button>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero panel" id="overview">
+        <div class="hero-copy">
+          <span class="eyebrow">Autonomous alpha engine</span>
+          <h1>Turn idle capital into adaptive yield.</h1>
+          <p>
+            Deploy liquidity across chains, monitor real-time risk, and automate
+            vault strategies with machine-tuned allocation.
+          </p>
+
+          <div class="cta-row">
+            <button class="primary-btn large">Create strategy</button>
+            <button class="ghost-btn large">View analytics</button>
+          </div>
+
+          <ul class="mini-metrics">
+            <li>
+              <strong>12.8%</strong>
+              <span>Projected APY</span>
+            </li>
+            <li>
+              <strong>$8.4M</strong>
+              <span>TVL deployed</span>
+            </li>
+            <li>
+              <strong>24/7</strong>
+              <span>Monitoring</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="dashboard-panel glass">
+            <div class="panel-header">
+              <span>Portfolio health</span>
+              <span class="status-pill success">Stable</span>
+            </div>
+
+            <div class="balance-wrap">
+              <small>Net value</small>
+              <h2>$2,486,930</h2>
+            </div>
+
+            <div class="ring-breakdown">
+              <div class="ring-chart">
+                <div class="ring-inner">
+                  <span>82%</span>
+                </div>
+              </div>
+              <ul>
+                <li><i class="dot blue"></i> ETH 39%</li>
+                <li><i class="dot purple"></i> SOL 27%</li>
+                <li><i class="dot gold"></i> USDC 16%</li>
+              </ul>
+            </div>
+
+            <div class="sparkline" aria-label="Yield performance">
+              <span style="--height: 32%"></span>
+              <span style="--height: 42%"></span>
+              <span style="--height: 38%"></span>
+              <span style="--height: 56%"></span>
+              <span style="--height: 65%"></span>
+              <span style="--height: 80%"></span>
+              <span style="--height: 75%"></span>
+              <span style="--height: 90%"></span>
+              <span style="--height: 84%"></span>
+              <span style="--height: 100%"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Key metrics">
+        <article class="stat-card panel">
+          <span class="label">Daily yield</span>
+          <strong>$72,480</strong>
+          <small class="positive">+4.2% vs. yesterday</small>
+        </article>
+        <article class="stat-card panel">
+          <span class="label">Strategy win rate</span>
+          <strong>89.4%</strong>
+          <small class="positive">+2.9% improvement</small>
+        </article>
+        <article class="stat-card panel">
+          <span class="label">Slippage risk</span>
+          <strong>0.18%</strong>
+          <small class="neutral">Within target band</small>
+        </article>
+        <article class="stat-card panel">
+          <span class="label">Coverage</span>
+          <strong>12 chains</strong>
+          <small class="neutral">Cross-chain ready</small>
+        </article>
+      </section>
+
+      <section class="workspace-grid">
+        <div class="panel vault-panel" id="vaults">
+          <div class="section-head">
+            <h3>Yield vaults</h3>
+            <button class="pill-btn">+ Add vault</button>
+          </div>
+
+          <div class="vault-list">
+            <div class="vault-row active">
+              <div class="vault-main">
+                <div class="coin-badge coin-eth">E</div>
+                <div>
+                  <strong>Ethereum Prime</strong>
+                  <small>Rebalance · 18h</small>
+                </div>
+              </div>
+              <div class="vault-data">
+                <span>APY</span>
+                <strong>11.2%</strong>
+              </div>
+              <div class="vault-data">
+                <span>TVL</span>
+                <strong>$1.9M</strong>
+              </div>
+              <div class="vault-data">
+                <span>Risk</span>
+                <strong>Low</strong>
+              </div>
+            </div>
+
+            <div class="vault-row">
+              <div class="vault-main">
+                <div class="coin-badge coin-sol">S</div>
+                <div>
+                  <strong>Solana Flow</strong>
+                  <small>Auto-stake · 6h</small>
+                </div>
+              </div>
+              <div class="vault-data">
+                <span>APY</span>
+                <strong>14.8%</strong>
+              </div>
+              <div class="vault-data">
+                <span>TVL</span>
+                <strong>$2.6M</strong>
+              </div>
+              <div class="vault-data">
+                <span>Risk</span>
+                <strong>Medium</strong>
+              </div>
+            </div>
+
+            <div class="vault-row">
+              <div class="vault-main">
+                <div class="coin-badge coin-btc">B</div>
+                <div>
+                  <strong>Bitcoin Core</strong>
+                  <small>Liquidity loop · 12h</small>
+                </div>
+              </div>
+              <div class="vault-data">
+                <span>APY</span>
+                <strong>9.4%</strong>
+              </div>
+              <div class="vault-data">
+                <span>TVL</span>
+                <strong>$1.1M</strong>
+              </div>
+              <div class="vault-data">
+                <span>Risk</span>
+                <strong>Low</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel setup-panel" aria-label="Strategy setup form">
+          <div class="section-head">
+            <h3>Strategy setup</h3>
+            <span class="status-pill amber">Draft</span>
+          </div>
+
+          <form id="strategy-form">
+            <label>
+              Vault name
+              <input type="text" value="Quantum Yield Alpha" />
+            </label>
+
+            <label>
+              Network
+              <select>
+                <option>Ethereum</option>
+                <option>Solana</option>
+                <option>Arbitrum</option>
+                <option>Base</option>
+              </select>
+            </label>
+
+            <label>
+              Strategy profile
+              <select>
+                <option>Balanced growth</option>
+                <option>High yield</option>
+                <option>Low volatility</option>
+                <option>Arbitrage</option>
+              </select>
+            </label>
+
+            <div class="inline-fields">
+              <label>
+                Min deposit
+                <input type="text" value="$5,000" />
+              </label>
+              <label>
+                Rebalance
+                <input type="text" value="6h" />
+              </label>
+            </div>
+
+            <div class="toggle-row">
+              <span>Auto-compound</span>
+              <button class="switch is-on" type="button" aria-label="Auto-compound toggle">
+                <span></span>
+              </button>
+            </div>
+
+            <div class="toggle-row">
+              <span>Risk guard</span>
+              <button class="switch is-on" type="button" aria-label="Risk guard toggle">
+                <span></span>
+              </button>
+            </div>
+
+            <button class="primary-btn full" type="submit">Activate strategy</button>
+          </form>
+        </aside>
+      </section>
+
+      <section class="bottom-grid" id="strategies">
+        <article class="panel chart-panel" id="analytics">
+          <div class="section-head">
+            <h3>Compounding curve</h3>
+            <span class="pill muted">30D</span>
+          </div>
+
+          <div class="bar-chart" aria-label="Compounding chart">
+            <div class="bar" style="--value: 28%"><span>Jan</span></div>
+            <div class="bar" style="--value: 35%"><span>Feb</span></div>
+            <div class="bar" style="--value: 42%"><span>Mar</span></div>
+            <div class="bar" style="--value: 49%"><span>Apr</span></div>
+            <div class="bar" style="--value: 62%"><span>May</span></div>
+            <div class="bar" style="--value: 78%"><span>Jun</span></div>
+            <div class="bar" style="--value: 88%"><span>Jul</span></div>
+          </div>
+        </article>
+
+        <article class="panel insight-panel">
+          <div class="section-head">
+            <h3>AI signal board</h3>
+            <span class="status-pill success">Strong</span>
+          </div>
+
+          <ul class="signal-list">
+            <li>
+              <span class="signal-label">Liquidity pulse</span>
+              <strong>+19.2%</strong>
+            </li>
+            <li>
+              <span class="signal-label">Volatility score</span>
+              <strong>Low</strong>
+            </li>
+            <li>
+              <span class="signal-label">Cross-chain spread</span>
+              <strong>0.36%</strong>
+            </li>
+            <li>
+              <span class="signal-label">Adaptive hedging</span>
+              <strong>Enabled</strong>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
